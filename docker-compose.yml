@@ -1,0 +1,49 @@
+version: "2.26.0"
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile-devtools
+    volumes:
+      - ./:/app
+      - ./.m2:/root/.m2
+    working_dir: /app
+    command: sh run.sh
+    ports:
+      - 8080:8080
+      - 35729:35729
+      - 5005:5005
+# networks:
+#   db:
+#     driver: bridge
+
+# services:
+#   app:
+#     image: javaspring
+#     working_dir: /app
+#     command: ./mvnw spring-boot:run
+#     ports:
+#       - 8080:8080
+#     volumes:
+#       - ./:/app
+#     environment:
+#       MYSQL_HOST: mysql
+#       MYSQL_USER: root
+#       MYSQL_PASSWORD: 123456
+#       MYSQL_DB: project_general
+#     networks:
+#       - db
+#   db:
+#     image: mysql:8.3.0
+#     restart: always
+#     volumes:
+#       - project-general-data:/var/lib/mysql
+#     environment:
+#       MYSQL_ROOT_PASSWORD: 123456
+#       MYSQL_DATABASE: project_general
+#     networks:
+#       - db
+
+# volumes:
+#   project-general-data:
