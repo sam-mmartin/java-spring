@@ -68,5 +68,5 @@ $ docker rm $(docker ps -a -q)
 ```
 
 > **docker ps** lista os containers
-> <br> **-a** opção para todos os containers mesmo os parados
+> <br> **-a** opção para listar todos os containers mesmo os parados
 > <br> **-q** opção silenciosa para obter apenas os IDs numéricos dos containers
