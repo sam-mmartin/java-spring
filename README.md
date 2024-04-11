@@ -28,7 +28,10 @@ $ backoffice-db
 
 Abaixo as especificações das variáveis de ambiente.
 
-> **-e MYSQL_ROOT_PASSWORD** senha para acessar o banco de dados dentro do container<br> > **-e MYSQL_DATABSE** banco de dados que será criado<br> > **-e MYSQL_USER** usuário para ter acesso ao bando de dados<br> > **-e MYSQL_PASSWORD** senha do usuário para ter acesso ao banco de dados
+> **-e MYSQL_ROOT_PASSWORD** senha para acessar o banco de dados dentro do container
+> <br> **-e MYSQL_DATABSE** banco de dados que será criado
+> <br> **-e MYSQL_USER** usuário para ter acesso ao bando de dados
+> <br> **-e MYSQL_PASSWORD** senha do usuário para ter acesso ao banco de dados
 
 > **backoffice-db** a imagem que será executado no container.
 
@@ -65,5 +68,5 @@ $ docker rm $(docker ps -a -q)
 ```
 
 > **docker ps** lista os containers
-> **-a** opção para todos os containers mesmo os parados
-> **-q** opção silenciosa para obter apenas os IDs numéricos dos containers
+> <br> **-a** opção para todos os containers mesmo os parados
+> <br> **-q** opção silenciosa para obter apenas os IDs numéricos dos containers
