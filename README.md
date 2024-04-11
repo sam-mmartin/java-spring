@@ -24,6 +24,7 @@ $ backoffice-db
 ```
 
 > **-d** executa o container no modo desanexado, em segundo plano
+
 > **-p 3306:3306** mapeia a porta 3306 do host para a porta 3306 do aplicativo
 
 Abaixo as especificações das variáveis de ambiente.
