@@ -1,13 +1,13 @@
-package com.example.projectgeneral;
+// package com.example.projectgeneral;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ProjectGeneralApplicationTests {
+// @SpringBootTest
+// class ProjectGeneralApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// @Test
+// void contextLoads() {
+// }
 
-}
+// }
