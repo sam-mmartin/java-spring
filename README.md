@@ -23,14 +23,12 @@ $ -e MYSQL_USER=main -e MYSQL_PASSWORD=123456
 $ backoffice-db
 ```
 
-> **-d** executa o container no modo desanexado, em segundo plano<br> > **-p 3306:3306** mapeia a porta 3306 do host para a porta 3306 do aplicativo
+> **-d** executa o container no modo desanexado, em segundo plano
+> <br> > **-p 3306:3306** mapeia a porta 3306 do host para a porta 3306 do aplicativo
 
 Abaixo as especificações das variáveis de ambiente.
 
-> **-e MYSQL_ROOT_PASSWORD** senha para acessar o banco de dados dentro do container<br>
-> **-e MYSQL_DATABSE** banco de dados que será criado<br>
-> **-e MYSQL_USER** usuário para ter acesso ao bando de dados<br>
-> **-e MYSQL_PASSWORD** senha do usuário para ter acesso ao banco de dados
+> **-e MYSQL_ROOT_PASSWORD** senha para acessar o banco de dados dentro do container<br> > **-e MYSQL_DATABSE** banco de dados que será criado<br> > **-e MYSQL_USER** usuário para ter acesso ao bando de dados<br> > **-e MYSQL_PASSWORD** senha do usuário para ter acesso ao banco de dados
 
 > **backoffice-db** a imagem que será executado no container.
 
